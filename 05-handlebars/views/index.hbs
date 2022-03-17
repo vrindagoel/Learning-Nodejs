@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<p>welcome to {{title}} via handlebars</p>
+{{# if condition}}
+    condition is met 
+{{else}}
+    condition not met 
+{{/if}}
+
+{{!-- this is block from line 3 to line 7 --}}
+{{!-- start off a block by using # and end it by / --}}
+{{# each arr as |val key|}}
+    {{key}} :: {{val}}
+{{/each}}
